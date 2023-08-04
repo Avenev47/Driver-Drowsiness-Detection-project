@@ -4,13 +4,8 @@
 Introduction
 Driver drowsiness is a critical issue that contributes to road accidents worldwide. This project aims to develop a driver drowsiness detection system using computer vision techniques and deep learning. The system analyzes a driver's facial features and predicts whether the driver is drowsy or alert.
 
-
-
-
 Dataset
 The dataset used for this project consists of images of drivers' faces captured under different conditions. The dataset is split into two parts: a training set  and a testing set . Each image is labeled as either "Drowsy" or "Alert."
-
-
 
 Dependencies
 To run the project, you need the following libraries installed:
@@ -25,18 +20,20 @@ cv2 (OpenCV): For image manipulation and preprocessing
 keras: For building and saving the CNN model
 
 
-
-
 Project Structure
 The main components of the project are as follows:
 
-Data Preprocessing: The load_images function is defined to load and preprocess images from the specified directories. Images are resized to a uniform size (224x224) and converted to RGB color space.
+Data Preprocessing: The load_images function is defined to load and preprocess images from the specified directories.
+ Images are resized to a uniform size (224x224) and converted to RGB color space.
 
-Model Architecture: The CNN model is built using Keras Sequential API. It consists of multiple layers, including Conv2D, MaxPooling2D, BatchNormalization, Dropout, and Dense. This architecture is designed to extract meaningful features from the input images.
+Model Architecture: The CNN model is built using Keras Sequential API. It consists of multiple layers, including Conv2D, MaxPooling2D, BatchNormalization, Dropout, and Dense.
+ This architecture is designed to extract meaningful features from the input images.
 
-Model Training: The model is compiled with categorical cross-entropy loss, Adam optimizer, and accuracy metric. EarlyStopping and ReduceLROnPlateau callbacks are used to prevent overfitting and adjust the learning rate during training.
+Model Training: The model is compiled with categorical cross-entropy loss, Adam optimizer, and accuracy metric.
+ EarlyStopping and ReduceLROnPlateau callbacks are used to prevent overfitting and adjust the learning rate during training.
 
-Model Evaluation: The project includes code to plot training and testing loss as well as accuracy graphs. These graphs provide insights into the model's performance and potential overfitting.
+Model Evaluation: The project includes code to plot training and testing loss as well as accuracy graphs. 
+These graphs provide insights into the model's performance and potential overfitting.
 
 Model Saving: After successful training, the trained model is saved in the drowsiness_detector.model file.
 
@@ -50,13 +47,9 @@ Execute the code in a Python environment, and the model will start training on t
 
 Clean Code Practices
 To improve the code's readability and maintainability, the following clean code practices have been implemented:
-
 Meaningful variable and function names: Variables and functions are named descriptively to convey their purpose clearly.
-
 Proper comments: Detailed comments are added to explain the purpose of each section, logic, and processing steps.
-
 Consistent formatting and indentation: The code is formatted consistently to enhance its structure and readability.
-
 Modular approach: Separate sections are defined for data preprocessing, model building, training, and evaluation to organize the code logically.
 
 
