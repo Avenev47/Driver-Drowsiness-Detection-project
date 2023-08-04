@@ -43,7 +43,8 @@ Model Saving: After successful training, the trained model is saved in the drows
 
 Running the Project
 To run the project, make sure you have installed all the required libraries and the dataset is available in the specified directories.
-Execute the code in a Python environment, and the model will start training on the provided dataset. Once the training is complete, the model's performance will be evaluated, and the trained model will be saved for future use.
+Execute the code in a Python environment, and the model will start training on the provided dataset. Once the training is complete, 
+the model's performance will be evaluated, and the trained model will be saved for future use.
 
 
 
